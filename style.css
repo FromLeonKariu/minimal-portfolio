@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+
+    margin: 0;
+}
+
+body {
+
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+ul li {
+    list-style: none;
+
+}
+ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+}
+main{
+
+    margin: 0 140px;
+}
+
+header {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+
+    
+}
+
+header nav {
+    background-color: white;
+    margin: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+ul{
+    display: flex;
+    gap: 20px;
+}
+.full-width{
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    margin: 20px 0;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    
+    overflow-x: scroll;
+    
+}
+
+.project{
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-template {
+    min-width: 330px;
+    max-height: fit-content;
+}
+
+.contact-section {
+    justify-content: normal;
+    gap: 150px;
+    
+}
+
+.contact-section h2 {
+
+    font-size: 54px;
+    max-width: 290px;
+}
+
+.meta {
+    text-align: right;
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.info {
+    font-size: 17px;
+}
+
+.hero-section {
+    width: fit-content;
+    gap: 5px;
+}
+
+.hero-title {
+    font-size: 64px;
+    font-family: "PT serif", serif;
+    font-weight: 700;
+    font-style: normal;
+}
