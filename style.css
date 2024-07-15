@@ -12,10 +12,12 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
+
 ul li {
     list-style: none;
 
 }
+
 ul li a {
     text-decoration: none;
     color: black;
@@ -27,6 +29,7 @@ a {
     text-decoration: none;
     font-size: 17px;
 }
+
 main{
 
     margin: 0 140px;
@@ -34,7 +37,7 @@ main{
 
 header {
     width: 100%;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     position: fixed;
 
     
@@ -52,15 +55,24 @@ ul{
     display: flex;
     gap: 20px;
 }
+
+
+img {
+
+    height: 250px;
+    object-fit: cover;
+}
+
 .full-width{
 
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-    margin: 20px 0;
+    background-color: white;
+    margin: 0;
 }
+
 
 .flex {
     display: flex;
@@ -68,8 +80,14 @@ ul{
     justify-content: center;
     align-items: center; 
     
-    overflow-x: scroll;
-    
+}
+
+.overflow11 {
+    overflow: scroll;
+    display: flex;
+    gap: 30px;
+    margin-left: 100px;
+    max-width: 830px;
 }
 
 .project{
@@ -78,9 +96,25 @@ ul{
 }
 
 .project-template {
-    min-width: 330px;
+    min-width: 300px;
     max-height: fit-content;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
 }
+
+.project-title {
+
+    font-size: 64px;
+    width: 300px;
+    align-self: flex-end;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
 
 .contact-section {
     justify-content: normal;
@@ -88,10 +122,12 @@ ul{
     
 }
 
+
 .contact-section h2 {
 
-    font-size: 54px;
+    font-size: 64px;
     max-width: 290px;
+    font-family: "PT Serif", serif;
 }
 
 .meta {
@@ -116,4 +152,17 @@ ul{
     font-family: "PT serif", serif;
     font-weight: 700;
     font-style: normal;
+}
+
+.project-template h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+p {
+    line-height: 30px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.85px;
+    font-weight: 300;
 }
