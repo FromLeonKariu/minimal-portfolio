@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    margin: 40px 140px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+
+}
+
+img {
+    height: 230px;
+    object-fit: cover;
+    width: inherit;
+}
+
+p {
+    line-height: 30px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.85px;
+    font-weight: 300;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.flexbox-items {
+    display: flex;
+    align-items: center;
+    
+}
+
+.article-list {
+    display: flex;
+    overflow-x: scroll;
+    gap: 30px;
+
+}
+
+.section-tittle {
+    margin-right: 100px;
+    align-self: flex-end;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    letter-spacing: -2px;
+    font-size: 32px;
+}
+
+.template {
+    width : 300px;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.template h2 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+
+}
+
+.template p {
+    background-color: red;
+    
+}
+
+.link{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.some-text {
+    height: 200px;
+    text-transform: capitalize;
+    width: 600px;
+    background-color: blue;
+}
