@@ -1,9 +1,31 @@
 
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-* {
 
+:root {
+
+    --background-clr: #fff;
+    --margin-base: 10px;
+    --ft-800: 3.875rem; /* 62px */
+    --ft-400: 1rem;  /* 16px */
+    --ft-200: 0.75rem; /* 12px */
+    --ft-300: 0.875rem; /* 14px */
+
+    --text-clr: #000;
+    --content-margin: 140px;
+
+    --ff-heading: "PT Serif", serif;
+    --ff-body: "Poppina", san-serif;
+}
+
+ 
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 body {
@@ -44,8 +66,8 @@ header {
 }
 
 header nav {
-    background-color: white;
-    margin: 40px 80px;
+    background-color: rgb(255, 255, 255);
+    margin: 30px 80px;
     display: flex;
     justify-content: space-between;
 }
@@ -58,10 +80,72 @@ ul{
 
 
 img {
-
-    height: 250px;
+    height: 230px;
     object-fit: cover;
+    width: inherit;
 }
+
+p {
+    line-height: 30px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.85px;
+    font-weight: 300;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+input, textarea {
+    margin: 20px 0;
+    border: none;
+    max-width: 400px;
+    border-bottom: 2px solid #000;
+    transition: border-bottom 0.5s ease-in-out;
+}
+
+
+input:focus, textarea:focus {
+
+    outline: none;
+    border-bottom: 2px solid rgb(14, 184, 226);
+}
+
+input::placeholder, textarea::placeholder {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    color: #999;
+}
+
+/* Browser compatability */
+
+/* Firefox */
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    color: #999
+}
+
+/* Safari and Chrome*/
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    color: #999
+}
+
+
+
+/* Custom classes */
 
 .full-width{
 
@@ -82,40 +166,6 @@ img {
     
 }
 
-.overflow11 {
-    overflow: scroll;
-    display: flex;
-    gap: 30px;
-    margin-left: 100px;
-    max-width: 830px;
-}
-
-.project{
-    display: flex;
-    justify-content: space-between;
-}
-
-.project-template {
-    min-width: 300px;
-    max-height: fit-content;
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-}
-
-.project-title {
-
-    font-size: 64px;
-    width: 300px;
-    align-self: flex-end;
-    font-family: "PT Serif", serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-
-
-
 .contact-section {
     justify-content: normal;
     gap: 150px;
@@ -125,7 +175,7 @@ img {
 
 .contact-section h2 {
 
-    font-size: 64px;
+    font-size: 62px;
     max-width: 290px;
     font-family: "PT Serif", serif;
 }
@@ -148,21 +198,81 @@ img {
 }
 
 .hero-title {
-    font-size: 64px;
+    font-size: 62px;
     font-family: "PT serif", serif;
     font-weight: 700;
     font-style: normal;
 }
 
-.project-template h2 {
-    font-size: 20px;
-    font-weight: 600;
+/* Styling for the portfolio section of the landing page*/
+
+
+.section-tittle {
+    
+    margin-right: 100px;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    letter-spacing: -2px;
+    font-size: 62px;
+    text-align: right;
 }
 
-p {
-    line-height: 30px;
+
+.link{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
     font-size: 16px;
-    font-family: "Poppins", sans-serif;
-    letter-spacing: 0.85px;
-    font-weight: 300;
+    font-weight: 500;
+}
+
+
+.flex-items{
+    display: flex;
+    height: 100vh;
+    margin-top: 100px;
+}
+
+
+.one{
+    min-height:300px;
+    width: 300px;
+    margin-right: 20px; 
+    align-self: flex-end;
+
+}
+
+.two{
+    display: flex;
+    gap: 30px;
+    min-height:300px;
+    overflow-x: scroll;
+    
+}
+
+.template2 {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    gap: 10px;
+}
+
+
+
+
+.input-inline {
+    display: flex;
+    gap: 30px;
+}
+
+
+.button {
+    border: none;
+    background-color: #fff;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.button:focus {
+    border: none;
 }
