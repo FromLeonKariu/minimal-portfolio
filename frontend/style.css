@@ -12,7 +12,7 @@
     --ft-300: 0.875rem; /* 14px */
 
     --text-clr: #000;
-    --content-margin: 140px;
+    --content-margin: 0 140px;
 
     --ff-heading: "PT Serif", serif;
     --ff-body: "Poppina", san-serif;
@@ -26,6 +26,47 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+/*
+    RESPONSIVE DESIGN
+    MOBILE DESIGN
+*/
+
+@media screen  and (max-width: 375px){
+
+    :root {
+        --content-margin: 0 20px;
+    }
+    
+}
+
+
+/* MOBILE LANDSCAPE AND TABLET PORTRAIT */
+@media screen and (min-width: 376px) and (max-width: 767px) {
+    
+    :root {
+        --content-margin: 0 40px;
+    }
+}
+
+/* TABLET LANDSCAPE STYLES */
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+    :root {
+
+    }
+    
+}
+
+/* LAPTOP DESIGN */
+@media screen and (max-width: 1400px){
+
+    :root {
+        
+    }
+    
 }
 
 body {
@@ -54,7 +95,8 @@ a {
 
 main{
 
-    margin: 0 140px;
+   margin: var(--content-margin);
+
 }
 
 header {
@@ -215,6 +257,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     letter-spacing: -2px;
     font-size: 62px;
     text-align: right;
+    width: fit-content;
 }
 
 
