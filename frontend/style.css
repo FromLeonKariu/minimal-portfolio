@@ -16,6 +16,7 @@
 
     --ff-heading: "PT Serif", serif;
     --ff-body: "Poppina", san-serif;
+    --display-prop: flex;
 }
 
  
@@ -37,6 +38,7 @@
 
     :root {
         --content-margin: 0 20px;
+        --display-prop: block;
     }
     
 }
@@ -47,6 +49,18 @@
     
     :root {
         --content-margin: 0 40px;
+        --display-prop:block;
+    }
+    .flex-items {
+        min-height: 100vh;
+    }
+    
+    .contact-section {
+        overflow: hidden;
+    }
+
+    .template2 {
+        max-width: initial;
     }
 }
 
@@ -116,7 +130,7 @@ header nav {
 
 
 ul{
-    display: flex;
+    display: var(--display-prop);
     gap: 20px;
 }
 
@@ -201,14 +215,14 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 
 
 .flex {
-    display: flex;
-    flex-direction: row;
+    display: var(--display-prop);
     justify-content: center;
     align-items: center; 
     
 }
 
 .contact-section {
+    flex-direction: row;
     justify-content: normal;
     gap: 150px;
     
@@ -271,22 +285,21 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 
 
 .flex-items{
-    display: flex;
-    height: 100vh;
+    display: var(--display-prop);
+    min-height: 100vh;
     margin-top: 100px;
 }
 
 
 .one{
-    min-height:300px;
-    width: 300px;
+     width: 300px;
     margin-right: 20px; 
     align-self: flex-end;
 
 }
 
 .two{
-    display: flex;
+    display: var(--display-prop);
     gap: 30px;
     min-height:300px;
     overflow-x: scroll;
@@ -296,7 +309,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 .template2 {
     display: flex;
     flex-direction: column;
-    width: 250px;
+    min-width: 250px;
     gap: 10px;
 }
 
