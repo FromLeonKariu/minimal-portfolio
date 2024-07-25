@@ -12,7 +12,7 @@ jobs:
       - name: copy files to docs
         run: |
           mkdir docs
-          cp index.html styles.css docs
+          cp frontend/index.html frontend/style.css docs
       - name: Deploy with GitHub pages
         uses: actions/deploy-pages@v1
         with:
