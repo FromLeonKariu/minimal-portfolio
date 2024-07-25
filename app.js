@@ -1,71 +1,25 @@
 console.log("HELLO BROWSER!!");
 
+function calculate_rem () {
 
-let user = {
-    name: 'Crystal',
-    age: 30,
-    email: "crystalninja.co.uk",
-    location: "Berlin",
-    blogs: [
-        "Why is js better",
-        {
-            title: "object blog",
-            author: "leon k",
-            date: "12th jan 2020",
-            excerpts: " lorem ",
-            thumbnailsrc: "/src/blog1.png"
-        },
-        {
-            title: "Bevy game dev rust game framework",
-            author: "leon k",
-            date: "12th jan 2020",
-            excerpts: " lorem ",
-            thumbnailsrc: "/src/blog2.png"
-        },
+    const readline = require('readline').createInterface({
+        input: process.stdin,
+        output: process.stdout
+    })
 
-        {
-            title: "Game art styles for 2d games",
-            author: "leon k",
-            date: "12th jan 2020",
-            excerpts: " lorem ",
-            thumbnailsrc: "/src/blog1.png"
-        },
+    readline.question('Enter a value (px): ', (number) => {
+        console.log(`You entered: ${number} px`);
+        readline.close()
+        let input;
+        readline.question('Enter a value (px): ', (answer) => {
+            input = answer;
+            console.log(`You entered: ${input} px`);
+            readline.close()
+        })
 
-     {
-            title: "pygame vs unity vs godot vs gamemaker",
-            author: "leon k",
-            date: "12th jan 2020",
-            excerpts: " lorem ",
-            thumbnailsrc: "/src/blog1.png"
-        },
-    
-    ],
-    login() {
-        console.log(this.name, "logged in!")
-    },
-    logout() { console.log(this.name, "logged out")},
-    list() {
-        console.log("BLOG ARTICLES");
-        this.blogs.forEach(blog =>{
-            console.log(blog.title);
-        });
-    },
+        console.log(input)
 
-};
-
-
-
-// Learning the Document object model
-
-const para = document.querySelector('h2');
-
-para.innerText = "HELLO";
-console.log(para); 
-
-
-
-const h2_title = document.getElementById("submit-button");
-
-h2_title.onclick = function () {
-    para.innerText = "Articles";
+    })
 }
+
+calculate_rem();
