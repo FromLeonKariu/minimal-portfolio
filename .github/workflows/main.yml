@@ -1,0 +1,20 @@
+name: Deploy to Github pages
+
+on: 
+  push: 
+    branches: [master]
+
+jobs: 
+  build-and-deploy: 
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: copy files to docs
+        run: |
+          mkdir docs
+          cp frontend/index.html frontend/style.css docs
+      - name: Deploy with GitHub pages
+        uses: actions/deploy-pages@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs 
